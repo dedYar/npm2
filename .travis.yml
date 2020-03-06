@@ -10,9 +10,9 @@ after_success:
   - git commit --message "npm packages $TRAVIS_BUILD_NUMBER"
   - git remote -v
   - git remote remove origin
-  - git remote add origin https://${GH_TOKEN}@${GH_REF}
+  - git remote add origin https://tiktok:${GH_TOKEN}@${GH_REF}
   - git push origin master
 env:
   global:
-    - GH_TOKEN: bfd025f32aa0370c49ffdd0fbf5db9799220adc7
+    - GH_TOKEN: b144b9795219ab0e6c22f78f9a41aa1b4bedb461
     - GH_REF: github.com/dedYar/npm2.git
