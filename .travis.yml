@@ -4,7 +4,7 @@ node_js:
 install:
   - npm install npmbox
 after_success:
-  - npmbox package.json
+  - npmbox npmbox
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
   - git add .
